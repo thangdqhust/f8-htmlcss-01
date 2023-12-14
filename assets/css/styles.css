@@ -55,16 +55,27 @@ a:hover {
 }
 
 /* ========== Header ========== */
-.header {
-    background: #e6f0ff;
-    height: 100vh;
+.hero-info {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #e6f0ff;
+    height: calc(100vh - 90px);
+    position: relative;
+}
+
+.fixed-header {
+    background: #e6f0ff;  
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0 ;
 }
 
 .navbar ul {
